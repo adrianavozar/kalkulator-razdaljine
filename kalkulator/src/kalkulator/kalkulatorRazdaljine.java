@@ -24,8 +24,9 @@ public class kalkulatorRazdaljine extends JDialog {
     }
 
     private void onOK() {
-        // add your code here
-        dispose();
+        double razdaljina2=Double.parseDouble(razdaljina.getText());
+        double razmera2=Double.parseDouble(razmera.getText());
+        rezultat.setText(razdaljina2 * razmera2/100000+"km");
     }
 
     public static void main(String[] args) {
